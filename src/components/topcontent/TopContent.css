@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300;600&family=Poppins:wght@600&display=swap');
+
+
+.topcontent{
+    color: white; 
+   
+}
+
+
+.topcontent_container{
+    position: absolute;
+    top: 300px;
+    right: 150px;
+
+}
+
+.topcontent_container > h3 {
+    width: 36ch;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 20px;
+    color: black;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.topcontent_container > a >button{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.topcontent_container > h1{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 50px 50px;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+.topcontent_downloadbutton{
+    color:white;
+    background-color:#6528e0;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.topcontent_downloadbutton:hover{
+ color:#6528e0;
+ background-color: white;
+ font-weight: 600;
+
+}
+.topContent_workbutton{
+    color: white;
+    border: 1px solid white !important;
+    background-color: black;
+    font-size: 14px;
+    padding: 9px 45px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+
+
+}
+
+.topContent_workbutton:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+
+
+}
