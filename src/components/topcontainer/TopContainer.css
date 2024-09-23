@@ -1,9 +1,8 @@
-.topcontainer{
-    background: url("../../assets/images/amnipriya.jpg");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: insert 0 0 0 2000px rgba(0,0,0,0.5);
-    
+.topcontainer {
+  background: url("../../assets/images/amnipriya.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: insert 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }

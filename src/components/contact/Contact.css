@@ -1,46 +1,74 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    margin:200px 0 100px;
-    align-items: center;
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  margin: 100px 0 50px; /* Adjusted for smaller screens */
+  align-items: center;
 }
 
-.contact_container{
-    border: 1px solid white;
-    width: 600px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin-top: 20px;
-
+.contact_container {
+  border: 1px solid white;
+  width: 90%; /* Adjusted to be more flexible on smaller screens */
+  max-width: 600px; /* Maintains the max width for larger screens */
+  height: auto; /* Adjust height to content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Adjusted padding for smaller screens */
+  margin-top: 20px;
 }
 
 .contact_container > p {
-    font-size:20px ;
-    text-align: left;
-    padding-bottom: 30px;
-
+  font-size: 18px; /* Slightly smaller font size for better readability on small screens */
+  text-align: left;
+  padding-bottom: 20px; /* Adjusted padding for smaller screens */
 }
 
 .contact_container > p > span {
-    color: #6528e0;
-
+  color: #6528e0;
 }
 
-.contact_icons > a > button > span > .MuiSvgIcon-root{
-    color: white;
-    font-size: 30px;
-
-
+.contact_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Added gap between icons */
 }
 
-.contact_icons > a > button{
-    color:white;
-    
+.contact_icons > a > button > span > .MuiSvgIcon-root {
+  color: white;
+  font-size: 30px;
+}
+
+.contact_icons > a > button {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    margin: 50px 0 30px; /* Further adjust margin for very small screens */
+  }
+
+  .contact_container {
+    width: 100%; /* Ensure full width usage on small screens */
+    padding: 15px; /* Reduce padding for small screens */
+  }
+
+  .contact_container > p {
+    font-size: 16px; /* Reduce font size for small screens */
+    padding-bottom: 15px; /* Further reduce padding */
+  }
+
+  .contact_icons {
+    flex-direction: column; /* Stack icons vertically on very small screens */
+  }
+
+  .contact_icons > a > button {
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+
+  .contact_icons > a > button:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last button */
+  }
 }

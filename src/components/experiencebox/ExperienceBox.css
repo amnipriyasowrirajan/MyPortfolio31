@@ -1,23 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Josefin+Sans&family=Montserrat:wght@300;600&family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Josefin+Sans&family=Montserrat:wght@300;600&family=Poppins:wght@600&display=swap");
 
-
-.experience{
-    display: flex;
-    flex-direction: column;
-    border: 2px dotted white;
-    border-radius: 10px;
-    width: 200px;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-
-
+.experience {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted white;
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+  margin: 20px; /* Added margin for better spacing */
 }
 
 .experience > p {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white; /* Ensures text color contrasts with background */
+}
+
+@media (max-width: 600px) {
+  .experience {
+    width: 90%; /* Use a percentage width to be more flexible on small screens */
+    height: auto; /* Adjust height to content */
+    padding: 10px; /* Add padding for better spacing on small screens */
+    margin: 10px auto; /* Center the container on the screen */
+  }
+
+  .experience > p {
+    font-size: 14px; /* Slightly smaller font size for better readability on small screens */
+    text-align: center; /* Center the text for better alignment */
+  }
 }

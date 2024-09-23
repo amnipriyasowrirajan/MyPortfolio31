@@ -1,31 +1,30 @@
-import React from 'react'
-import {Element} from 'react-scroll'
-import skillimage from '../../assets/images/skills.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
+import React from "react";
+import { Element } from "react-scroll";
+import skillimage from "../../assets/images/skills.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Loader from "react-loaders";
 import {
-  faLaravel,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import './SkillContainer.scss'
+} from "@fortawesome/free-brands-svg-icons";
+import "./SkillContainer.scss";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 const SkillContainer = () => {
   return (
-   <Element className='skillcontainer' id='skills'>
-    <div className='skillcontainer_image'>
-        <img src={skillimage} alt='' />
+    <Element className="skillcontainer" id="skills">
+      <div className="skillcontainer_image">
+        <img src={skillimage} alt="" />
+      </div>
+      <div className="skillcontainer_text">
+        <h2>SKILLSET</h2>
 
-    </div>
-    <div className='skillcontainer_text'>
-      <h2>SKILLSET</h2>
-
-       <div className="stage-cube-cont">
+        <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faLaravel} color="#DD0031" />
+              <FontAwesomeIcon icon={faCoffee} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -47,8 +46,7 @@ const SkillContainer = () => {
       </div>
       <Loader type="pacman" />
     </Element>
-    
-  )
-}
+  );
+};
 
-export default SkillContainer
+export default SkillContainer;
